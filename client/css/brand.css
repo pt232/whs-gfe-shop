@@ -1,0 +1,75 @@
+@import url("./variables.css");
+@import url("./reset.css");
+@import url("./utils.css");
+
+.brand {
+  padding: 8rem 0 4rem 0;
+}
+
+.brand__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 6rem;
+  column-gap: 4rem;
+}
+
+.brand__item:nth-child(4) {
+  margin-top: -7rem;
+}
+
+.brand__item:last-child {
+  margin-top: -16rem;
+  grid-column: 2;
+}
+
+.brand__img {
+  display: block;
+  height: 33rem;
+}
+
+.brand__information {
+  padding: 2rem 0;
+}
+
+.brand__information:only-child {
+  padding: 3rem 0;
+}
+
+.brand__title {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.brand__subtitle {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.brand__text {
+  line-height: 2.2rem;
+}
+
+.brand__link {
+  color: var(--color-cyan);
+}
+
+.brand__link:hover {
+  text-decoration: underline;
+}
+
+.brand__awards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.awards__item {
+  width: 25%;
+}
+
+.award__logo {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
