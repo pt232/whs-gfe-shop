@@ -32,3 +32,11 @@ img {
 ul {
   list-style: none;
 }
+
+button {
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}

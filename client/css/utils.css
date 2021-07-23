@@ -1,4 +1,4 @@
-/* CONTAINER */
+/* GENERAL */
 
 .container {
   width: 100%;
@@ -9,6 +9,22 @@
 
 .container--small {
   max-width: 100rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.text {
+  line-height: 2.2rem;
 }
 
 /* HEADER */
@@ -140,7 +156,7 @@
 /* FOOTER */
 
 .footer {
-  background-color: #f7f7f7;
+  background-color: var(--color-gray-lighter);
 }
 
 .footer__top {
@@ -220,6 +236,7 @@
 
 .social__list {
   display: flex;
+  align-items: center;
 }
 
 .social__item {

@@ -12,8 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/brand.css" />
+    <link rel="stylesheet" href="./css/stores.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js//map.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -35,12 +41,12 @@
               <a href="index.html" class="nav__link">Products</a>
             </li>
             <li class="nav__item">
-              <a href="brand.html" class="nav__link nav__link--selected"
-                >The Brand</a
-              >
+              <a href="brand.html" class="nav__link">The Brand</a>
             </li>
             <li class="nav__item">
-              <a href="stores.html" class="nav__link">Local Stores</a>
+              <a href="stores.html" class="nav__link nav__link--selected"
+                >Local Stores</a
+              >
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Look Book</a>
@@ -54,113 +60,131 @@
     <section class="hero">
       <div class="container container--small">
         <h1 class="hero__title">
-          <span class="hero__title--bold">The</span> Brand
+          <span class="hero__title--bold">Local</span> Stores
         </h1>
-        <h2 class="hero__subtitle">Company Slogan Goes Here</h2>
+        <h2 class="hero__subtitle">Find a Store near You</h2>
       </div>
     </section>
 
     <!-- CONTENT -->
-    <main class="brand">
-      <div class="container container--small">
-        <div class="brand__grid">
-          <div class="brand__item">
-            <img
-              src="./img/company-1.jpg"
-              alt="Hand Designed Clothing"
-              class="brand__img"
-            />
-          </div>
-          <div class="brand__item">
-            <div class="brand__information">
-              <h3 class="title">Hand Designed Clothing</h3>
-              <h4 class="subtitle">
-                Eestablished in 2013, Avenue Fashion Sed dictum elit vel sapien
-                luctus eras
-              </h4>
+    <main class="locations">
+      <section class="stores">
+        <div class="container container--small">
+          <div class="stores__row">
+            <div class="stores__location">
+              <h3 class="title">London</h3>
+              <h5 class="subtitle">180-182 Regent Street, London, W1B 5BT</h5>
               <p class="text">
-                Praesent feugiat malesuada tristique maecenas rhoncus diam eget
-                quam vestibulim consectetur, id condimentum leo porttitor. Cum
-                sociis natoque penatibus eta magnis disut parturient montes,
-                nascetur ridiculus mus. Donec sem lorem laoreet tempor un risus
-                vitae, rutrum sodales nibh suspendisse congue metus nunc, id
-                viverra elit loreti rhoncus quis consecteur es. Donec pulvinar
-                tempor lorem a pretium justo interdum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing esi elit.
+                Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec
+                tempor odio. Fusce posuere nunc iaculis ligula viverra iaculis.
+                Aliquam erat volutpat.
               </p>
+              <button class="stores__btn">View Details</button>
             </div>
-          </div>
-          <div class="brand__item">
-            <img
-              src="./img/company-3.jpg"
-              alt="Hand Designed Clothing"
-              class="brand__img"
-            />
-            <div class="brand__information">
-              <h3 class="title">Our values, vision and strategy</h3>
-              <h4 class="subtitle">
-                The above image would be a great place for an advertising video
-              </h4>
+            <div class="stores__location">
+              <h3 class="title">New York</h3>
+              <h5 class="subtitle">109 Columbus Circle, New York, NY 10023</h5>
               <p class="text">
-                Cras maximus venenatis malesuada. Nulla sagittis elit felis, ac
-                facilisis quam ornare aliquam. Etiam cursus odio vitae dui
-                dignissim, sed tempus lacus tincidunt et donec sapien velit,
-                rhoncus eu nulla a, molestie tempus mi maecenas sagittis ornare.
-                Pellentesque sapien mi,
-                <a href="#" class="brand__link">tincidunt nec magna vitae</a>,
-                volutpat elementum odioni lorem Aliquam tempor massa vitae augue
-                mattis tempor id in ante ut augue erat, luctus eil.
+                Nunc non posuere nisl. Etiam finibus vel dui nec lobortis.
+                Aliquam egestas, sem quis condimentum venenatis, erat leo
+                fermentum dolor, non sollicitudin massa mi eu nibh. Nullam vitae
+                aliquam dui, non sodales nisl.
               </p>
+              <button class="stores__btn">View Details</button>
             </div>
-          </div>
-          <div class="brand__item">
-            <img
-              src="./img/company-2.jpg"
-              alt="Hand Designed Clothing"
-              class="brand__img"
-            />
-            <div class="brand__information">
-              <h3 class="title">Ethical trading</h3>
-              <h4 class="subtitle">
-                We oversee the working conditions of the people in the supply
-                chain
-              </h4>
+            <div class="stores__location">
+              <h3 class="title">Paris</h3>
+              <h5 class="subtitle">2133 Rue Saint-Honoré, 75001 Paris</h5>
               <p class="text">
-                Nullam dapibus consectetur neque, faucibus porttitor purus
-                iaculis sed. Aenean eras dapibus augue, eget dignissim dui
-                maecenas et rhoncus mim, vel semper arcu lorem Pellentesque
-                congue justo esteir pellentesque aliquet massa eget posuere
-                tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit.
-                <a href="#" class="brand__link">A link &rarr;</a>
+                Ut interdum fermentum blandit. Donec nec lacus egetit mi rhoncus
+                eleifend. Curabitur laoreet nisl eget rutruml auctor. Vestibulum
+                ante ipsum primis in faucibus orcip luctus et ultrices posuere
+                cubilia curae cras ligula.
               </p>
+              <button class="stores__btn">View Details</button>
             </div>
-          </div>
-          <div class="brand__item">
-            <ul class="brand__awards">
-              <li class="awards__item">
-                <img
-                  src="./img/award-1.png"
-                  alt="Brand Award"
-                  class="award__logo"
-                />
-              </li>
-              <li class="awards__item">
-                <img
-                  src="./img/award-2.png"
-                  alt="Brand Award"
-                  class="award__logo"
-                />
-              </li>
-              <li class="awards__item">
-                <img
-                  src="./img/award-3.png"
-                  alt="Brand Award"
-                  class="award__logo"
-                />
-              </li>
-            </ul>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="location-wrapper">
+        <div class="location-map" id="map"></div>
+        <div class="location-information">
+          <h3 class="title">London</h3>
+          <h5 class="subtitle">180-182 Regent Street, London, W1B 5BT</h5>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing esi elit. Vivamus
+            at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio.
+            Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat
+            volutpat.
+          </p>
+          <ul class="location-information__list">
+            <li class="location-information__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>180-182 Regent Street, London, W1B 5BT</p>
+            </li>
+            <li class="location-information__item">
+              <i class="fas fa-phone-alt"></i>
+              <p>0123-456-789</p>
+            </li>
+            <li class="location-information__item">
+              <i class="fas fa-link"></i>
+              <p>
+                <a href="https://www.yourwebsite.com">www.yourwebsite.com</a>
+              </p>
+            </li>
+            <li class="location-information__item">
+              <i class="far fa-envelope"></i>
+              <p><a href="mailto:info@w-hs.de">support@yourwebsite.com</a></p>
+            </li>
+            <li class="location-information__item">
+              <i class="far fa-clock"></i>
+              <p>
+                Monday-Friday: 9am to 6pm Saturday: 10am to 6pm Sunday: 10am to
+                2pm
+              </p>
+            </li>
+          </ul>
+          <ul class="location-information__socials">
+            <li class="location-information__social">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="location-information__social">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="location-information__social">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="location-information__social">
+              <a
+                href="https://pinterest.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->

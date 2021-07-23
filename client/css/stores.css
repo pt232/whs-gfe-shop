@@ -1,0 +1,92 @@
+@import url("./variables.css");
+@import url("./reset.css");
+@import url("./utils.css");
+
+.locations {
+  padding: 8rem 0;
+}
+
+.stores__row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+}
+
+.stores__btn {
+  margin-top: 2.5rem;
+  padding: 1.6rem 2.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 2px solid var(--color-gray);
+  transition: background-color 350ms;
+}
+
+.stores__btn:hover {
+  background-color: var(--color-cyan);
+  color: #fff;
+  border-color: var(--color-cyan);
+}
+
+.location-wrapper {
+  display: flex;
+  height: 53rem;
+}
+
+.location-map {
+  flex: 1 1 65%;
+  height: 100%;
+}
+
+.location-map > * {
+  height: inherit !important;
+}
+
+.location-information {
+  flex: 1 1 35%;
+  padding: 4rem;
+  background-color: var(--color-gray-lighter);
+}
+
+.location-information__list {
+  margin: 3rem 0 5rem 0;
+}
+
+.location-information__item {
+  display: flex;
+  align-items: center;
+}
+
+.location-information__item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.location-information__item > i {
+  display: inline-block;
+  width: 2rem;
+  margin-right: 1.5rem;
+  color: var(--color-gray-light);
+}
+
+.location-information__socials {
+  display: flex;
+  align-items: center;
+}
+
+.location-information__social {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 2rem;
+  background-color: var(--color-gray);
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 50%;
+}
+
+.location-information__social > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

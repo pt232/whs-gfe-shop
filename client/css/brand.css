@@ -35,22 +35,6 @@
   padding: 3rem 0;
 }
 
-.brand__title {
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-}
-
-.brand__subtitle {
-  margin-bottom: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.brand__text {
-  line-height: 2.2rem;
-}
-
 .brand__link {
   color: var(--color-cyan);
 }
