@@ -12,8 +12,12 @@
   padding-bottom: 8rem;
 }
 
-.stores__location:not(:last-child) {
-  margin-right: 6rem;
+.stores__location {
+  flex: 1;
+}
+
+.stores__location:nth-child(2) {
+  margin: 0 9rem;
 }
 
 .stores__btn {
