@@ -1,0 +1,165 @@
+@import url("./variables.css");
+@import url("./reset.css");
+@import url("./utils.css");
+
+.look-book {
+  padding: 8rem 0;
+}
+
+.look-book__bar {
+  display: flex;
+  padding: 4.5rem 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.look-book__option {
+  margin-right: 4.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 350ms;
+}
+
+.look-book__option--seclected {
+  color: var(--color-cyan);
+}
+
+.look-book__option:hover {
+  color: var(--color-cyan);
+}
+
+.look-book__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 45rem);
+  gap: 3rem;
+}
+
+.look-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.look-item:hover {
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+.look-item:hover > .look-item__details {
+  display: block;
+}
+
+.look-item:hover > .look-item__thumbnails {
+  display: flex;
+}
+
+.look-item__thumbnails {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+}
+
+.look-item__thumbnail {
+  width: max-content;
+  margin-bottom: 1.5rem;
+}
+
+.look-item__details {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  padding: 1.6rem 1.2rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+  transform: translateY(100%);
+  z-index: 1000;
+}
+
+.look-item__title {
+  margin-bottom: 1rem;
+  font-size: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.look-item__cost {
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.look-item__cost > span {
+  font-weight: 600;
+}
+
+.look-ad {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  background-repeat: no-repeat;
+}
+
+.look-ad--first {
+  grid-column: span 2;
+  background-image: url("../img/lookbook-1.jpg");
+  background-size: 140%;
+  background-position: left top;
+}
+
+.look-ad--second {
+  grid-column: span 3;
+  background-image: url("../img/lookbook-2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.look-ad__title {
+  margin-bottom: 1rem;
+  font-size: 4.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.look-ad__subtitle {
+  max-width: 40%;
+}
+
+.look-ad__text {
+  max-width: 35%;
+  margin-bottom: 2rem;
+}
+
+.look-ad__title > span {
+  font-weight: 600;
+}
+
+.look-ad__btn {
+  display: inline-block;
+  width: max-content;
+}
+
+.look-ad__cta {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  color: var(--color-cyan);
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+}
+
+.look-ad__cta > p:first-child {
+  font-size: 10rem;
+  line-height: 8rem;
+  letter-spacing: 1rem;
+}
+
+.look-ad__cta > p:nth-child(2) {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
