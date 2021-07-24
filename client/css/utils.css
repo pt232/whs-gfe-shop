@@ -1,3 +1,6 @@
+@import url("./variables.css");
+@import url("./reset.css");
+
 /* GENERAL */
 
 .container {
@@ -19,6 +22,7 @@
 
 .subtitle {
   margin-bottom: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -182,6 +186,10 @@
 .hero__subtitle {
   font-size: 3rem;
   font-weight: 500;
+}
+
+.hero__subtitle--cyan {
+  color: var(--color-cyan);
 }
 
 /* FOOTER */
