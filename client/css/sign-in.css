@@ -1,0 +1,33 @@
+@import url("./variables.css");
+@import url("./reset.css");
+@import url("./utils.css");
+
+.login {
+  padding: 8rem 0;
+}
+
+.login__wrapper {
+  padding-bottom: 8rem;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.login__title {
+  width: 100%;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login__input {
+  margin-bottom: 2.5rem;
+}
+
+.login__btn {
+  width: max-content;
+}

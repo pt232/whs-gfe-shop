@@ -33,10 +33,12 @@ ul {
   list-style: none;
 }
 
-button {
+button,
+input {
   background: none;
   color: inherit;
   font-family: inherit;
+  font-size: inherit;
   border: none;
-  cursor: pointer;
+  outline: none;
 }

@@ -12,20 +12,12 @@
   padding-bottom: 8rem;
 }
 
-.stores__btn {
-  margin-top: 2.5rem;
-  padding: 1.6rem 2.6rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  border: 2px solid var(--color-gray);
-  transition: background-color 350ms;
+.stores__location:not(:last-child) {
+  margin-right: 6rem;
 }
 
-.stores__btn:hover {
-  background-color: var(--color-cyan);
-  color: #fff;
-  border-color: var(--color-cyan);
+.stores__btn {
+  margin-top: 2.5rem;
 }
 
 .location-wrapper {
@@ -81,6 +73,11 @@
   color: #fff;
   font-size: 1.6rem;
   border-radius: 50%;
+  transition: background-color 350ms;
+}
+
+.location-information__social:hover {
+  background-color: var(--color-cyan);
 }
 
 .location-information__social > a {

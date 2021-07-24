@@ -12,12 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/sign-in.css" />
     <script src="./js/main.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header header--image">
+    <header class="header">
       <div class="header__top">
         <div class="container">
           <a href="sign-in.html" class="header__login">Sign in</a>
@@ -32,9 +32,7 @@
           </div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__link nav__link--selected"
-                >Products</a
-              >
+              <a href="index.html" class="nav__link">Products</a>
             </li>
             <li class="nav__item">
               <a href="brand.html" class="nav__link">The Brand</a>
@@ -47,14 +45,42 @@
             </li>
           </ul>
         </nav>
-        <div class="home-hero">
-          <h1 class="home-hero__title">
-            <span>A</span><span>V</span><span>E</span>
-          </h1>
-          <a href="#" class="home-hero__cta">Shop Men's Collection</a>
-        </div>
       </div>
     </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container container--small">
+        <h1 class="hero__title">
+          <span class="hero__title--bold">Welcome</span> To Ave
+        </h1>
+        <h2 class="hero__subtitle">Sign in or Register</h2>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main class="login">
+      <div class="container container--small">
+        <div class="login__wrapper">
+          <h3 class="login__title title">Sign In</h3>
+          <form action="./create-look-book.html" class="login__form">
+            <input
+              type="email"
+              placeholder="Your email..."
+              class="login__input input"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Your password..."
+              class="login__input input"
+              required
+            />
+            <input type="submit" value="Sign In" class="login__btn btn" />
+          </form>
+        </div>
+      </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">

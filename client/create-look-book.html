@@ -12,12 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/create-look-book.css" />
     <script src="./js/main.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header header--image">
+    <header class="header">
       <div class="header__top">
         <div class="container">
           <a href="sign-in.html" class="header__login">Sign in</a>
@@ -32,9 +32,7 @@
           </div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__link nav__link--selected"
-                >Products</a
-              >
+              <a href="index.html" class="nav__link">Products</a>
             </li>
             <li class="nav__item">
               <a href="brand.html" class="nav__link">The Brand</a>
@@ -47,14 +45,70 @@
             </li>
           </ul>
         </nav>
-        <div class="home-hero">
-          <h1 class="home-hero__title">
-            <span>A</span><span>V</span><span>E</span>
-          </h1>
-          <a href="#" class="home-hero__cta">Shop Men's Collection</a>
-        </div>
       </div>
     </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container container--small">
+        <h1 class="hero__title">
+          <span class="hero__title--bold">Welcome</span> To Ave
+        </h1>
+        <h2 class="hero__subtitle">Create your own personalized Look Book</h2>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <main class="create-look">
+      <div class="container container--small">
+        <div class="create-look__wrapper">
+          <h3 class="create-look__title title">Create your own Look Book</h3>
+          <form action="" class="create-look__from">
+            <input
+              type="text"
+              placeholder="Headline..."
+              class="create-look__input input"
+              required
+            />
+            <input
+              type="number"
+              placeholder="Your dresses price..."
+              class="create-look__input input"
+              min="0"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Your dresses description..."
+              class="create-look__input input"
+              required
+            />
+            <input
+              type="button"
+              value="Upload Picture"
+              class="create-look__btn btn"
+            />
+            <div class="create-look__container">
+              <input
+                type="checkbox"
+                placeholder="Your dresses description..."
+                id="cb"
+                class="create-look__checkbox"
+                required
+              />
+              <label for="cb" class="create-look__label">
+                Agree to publish your details on the website.
+              </label>
+            </div>
+            <input
+              type="submit"
+              value="Create or Update"
+              class="create-look__btn btn"
+            />
+          </form>
+        </div>
+      </div>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
