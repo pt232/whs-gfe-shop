@@ -121,7 +121,7 @@
   align-items: center;
 }
 
-.nav__item:not(:last-child) {
+.nav__item:not(:last-of-type) {
   margin-right: 6rem;
 }
 
