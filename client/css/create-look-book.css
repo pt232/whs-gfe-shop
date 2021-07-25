@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 2.5rem;
+  min-width: 2.5rem;
   height: 2.5rem;
   border: 1px solid var(--color-gray-light);
   appearance: none;
@@ -77,4 +77,10 @@
 .create-look__label {
   margin-left: 1.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .create-look__wrapper {
+    max-width: 100%;
+  }
 }

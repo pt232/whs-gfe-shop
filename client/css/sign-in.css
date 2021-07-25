@@ -31,3 +31,9 @@
 .login__btn {
   width: max-content;
 }
+
+@media (max-width: 768px) {
+  .login__wrapper {
+    max-width: 100%;
+  }
+}
