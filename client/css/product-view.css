@@ -139,7 +139,7 @@
   color: var(--color-gray-light);
 }
 
-.oberview__additions {
+.overview__additions {
   margin: 4rem 0;
 }
 
@@ -172,4 +172,47 @@
 
 .tabs__content > .text:not(:last-child) {
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .overview__basics {
+    flex-direction: column;
+  }
+
+  .overview__slider {
+    min-width: initial;
+    width: 100%;
+    height: 50rem;
+    margin: 0 0 3.5rem 0;
+  }
+
+  .basic-information__bar {
+    flex-wrap: wrap;
+  }
+
+  .basic-information__bar > * {
+    margin: 0 1.5rem 1.5rem 0;
+  }
+
+  .basic-information__price {
+    padding: 2rem 0;
+    font-size: 3.2rem;
+  }
+
+  .basic-information__price::before {
+    font-size: 1.6rem;
+  }
+
+  .basic-information__availability {
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .overview__additions {
+    margin: 6rem 0 4rem 0;
+  }
+
+  .tabs__list {
+    flex-direction: column;
+  }
 }
