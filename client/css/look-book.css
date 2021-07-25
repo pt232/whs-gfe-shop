@@ -8,6 +8,7 @@
 
 .look-book__bar {
   display: flex;
+  flex-wrap: wrap;
   padding: 4.5rem 0;
   border-top: 1px solid #e0e0e0;
 }
@@ -61,6 +62,7 @@
 
 .look-item__thumbnail {
   width: max-content;
+  max-width: 8rem;
   margin-bottom: 1.5rem;
 }
 
@@ -106,7 +108,7 @@
 .look-ad--first {
   grid-column: span 2;
   background-image: url("../img/lookbook-1.jpg");
-  background-size: 140%;
+  background-size: 95rem;
   background-position: left top;
 }
 
@@ -163,4 +165,36 @@
 .look-ad__cta > p:nth-child(2) {
   font-size: 3.5rem;
   letter-spacing: 4px;
+}
+
+@media (max-width: 768px) {
+  .look-book__option {
+    margin: 1rem 2.5rem 1rem 0;
+  }
+
+  .look-book__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, minmax(45rem, auto));
+  }
+
+  .look-ad {
+    padding: 2.5rem 2rem;
+  }
+
+  .look-ad--first,
+  .look-ad--second {
+    grid-column: initial;
+  }
+
+  .look-ad--first {
+    background-size: cover;
+  }
+
+  .look-ad__title {
+    font-size: 3.2rem;
+  }
+
+  .look-ad__cta {
+    display: none;
+  }
 }
