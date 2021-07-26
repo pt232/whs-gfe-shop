@@ -139,7 +139,9 @@ const getLookbooks = (req, res) => {
   }
 
   if (Object.keys(userLookbook).length > 0) {
-    sortedLookbooks.unshift(userLookbook);
+    if (userLookbook.publish) {
+      sortedLookbooks.unshift(userLookbook);
+    }
   }
 
   const filteredLookbooks = sortedLookbooks.filter(
