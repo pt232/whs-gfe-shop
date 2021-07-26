@@ -3,9 +3,9 @@ const products = [
     id: 1,
     name: "Men White Long-sleeved Shirt",
     price: {
-      offer: false,
-      current: 89.99,
-      last: 0.0,
+      offer: true,
+      current: 45.99,
+      last: 65.99,
     },
     description: {
       short: "Classic long-sleeved shirt for men on the move. 100% cotton.",
@@ -46,14 +46,15 @@ const products = [
   },
   {
     id: 2,
-    name: "Men White Long-sleeved Shirt",
+    name: "Men Dark Blue Long-sleeved Shirt",
     price: {
       offer: false,
-      current: 89.99,
+      current: 56.97,
       last: 0.0,
     },
     description: {
-      short: "Classic long-sleeved shirt for men on the move. 100% cotton.",
+      short:
+        "Classic long-sleeved shirt for men with a love for pandas. 100% cotton.",
       middle:
         "Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.",
       long: {
@@ -72,14 +73,14 @@ const products = [
     },
     image: {
       all: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.2.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.4.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-2.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-2.2.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-2.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-2.4.jpg",
       ],
       thumbnails: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-2.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-2.3.jpg",
       ],
     },
     reviews: {
@@ -91,11 +92,11 @@ const products = [
   },
   {
     id: 3,
-    name: "Men White Long-sleeved Shirt",
+    name: "Men White Long-sleeved Funny Shirt",
     price: {
-      offer: false,
-      current: 89.99,
-      last: 0.0,
+      offer: true,
+      current: 37.99,
+      last: 65.5,
     },
     description: {
       short: "Classic long-sleeved shirt for men on the move. 100% cotton.",
@@ -117,14 +118,14 @@ const products = [
     },
     image: {
       all: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.2.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.4.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-3.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-3.2.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-3.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-3.4.jpg",
       ],
       thumbnails: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-3.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-3.3.jpg",
       ],
     },
     reviews: {
@@ -136,10 +137,10 @@ const products = [
   },
   {
     id: 4,
-    name: "Men White Long-sleeved Shirt",
+    name: "Men Black T-Shirt",
     price: {
       offer: false,
-      current: 89.99,
+      current: 47.0,
       last: 0.0,
     },
     description: {
@@ -162,14 +163,14 @@ const products = [
     },
     image: {
       all: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.2.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.4.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-4.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-4.2.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-4.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-4.4.jpg",
       ],
       thumbnails: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-4.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-4.3.jpg",
       ],
     },
     reviews: {
@@ -181,14 +182,14 @@ const products = [
   },
   {
     id: 5,
-    name: "Men White Long-sleeved Shirt",
+    name: "Women purple T-Shirt",
     price: {
-      offer: false,
-      current: 89.99,
-      last: 0.0,
+      offer: true,
+      current: 19.99,
+      last: 37.0,
     },
     description: {
-      short: "Classic long-sleeved shirt for men on the move. 100% cotton.",
+      short: "Classic t-shirt for women on the move. 100% cotton.",
       middle:
         "Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.",
       long: {
@@ -207,14 +208,14 @@ const products = [
     },
     image: {
       all: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.2.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.4.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-5.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-5.2.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-5.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-5.4.jpg",
       ],
       thumbnails: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-5.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-5.3.jpg",
       ],
     },
     reviews: {
@@ -226,14 +227,14 @@ const products = [
   },
   {
     id: 6,
-    name: "Men White Long-sleeved Shirt",
+    name: "Women Black T-Shirt",
     price: {
       offer: false,
-      current: 89.99,
+      current: 24.99,
       last: 0.0,
     },
     description: {
-      short: "Classic long-sleeved shirt for men on the move. 100% cotton.",
+      short: "Classic t-shirt for women on the move. 100% cotton.",
       middle:
         "Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.",
       long: {
@@ -252,14 +253,14 @@ const products = [
     },
     image: {
       all: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.2.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.4.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-6.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-6.2.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-6.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-6.4.jpg",
       ],
       thumbnails: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-6.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-6.3.jpg",
       ],
     },
     reviews: {
@@ -271,14 +272,14 @@ const products = [
   },
   {
     id: 7,
-    name: "Men White Long-sleeved Shirt",
+    name: "Women Pink T-Shirt",
     price: {
       offer: false,
-      current: 89.99,
+      current: 29.99,
       last: 0.0,
     },
     description: {
-      short: "Classic long-sleeved shirt for men on the move. 100% cotton.",
+      short: "Classic t-shirt for women on the move. 100% cotton.",
       middle:
         "Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.",
       long: {
@@ -297,14 +298,14 @@ const products = [
     },
     image: {
       all: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.2.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.4.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-7.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-7.2.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-7.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-7.4.jpg",
       ],
       thumbnails: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-7.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-7.3.jpg",
       ],
     },
     reviews: {
@@ -316,14 +317,14 @@ const products = [
   },
   {
     id: 8,
-    name: "Men White Long-sleeved Shirt",
+    name: "Women Red T-Shirt",
     price: {
-      offer: false,
-      current: 87.99,
-      last: 0.0,
+      offer: true,
+      current: 36.99,
+      last: 45.5,
     },
     description: {
-      short: "Classic long-sleeved shirt for men on the move. 100% cotton.",
+      short: "Classic t-shirt for women with a favour for dogs. 100% cotton.",
       middle:
         "Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.",
       long: {
@@ -342,14 +343,14 @@ const products = [
     },
     image: {
       all: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.2.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.4.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-8.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-8.2.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-8.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-8.4.jpg",
       ],
       thumbnails: [
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
-        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.3.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-8.1.jpg",
+        "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-8.3.jpg",
       ],
     },
     reviews: {
@@ -366,7 +367,6 @@ const getProducts = (req, res) => {
   const productsPerSite = 6;
   const maxIndex = page * productsPerSite - 1;
   const minIndex = maxIndex - (productsPerSite - 1);
-  const pageCount = Math.ceil(products.length / productsPerSite);
   let sortedProducts = [];
 
   if (sort === "offers") {
@@ -391,6 +391,11 @@ const getProducts = (req, res) => {
   const filteredProducts = sortedProducts.filter(
     (p, index) => index >= minIndex && index <= maxIndex
   );
+
+  const pageCount =
+    sortedProducts.length > filteredProducts.length
+      ? Math.ceil(products.length / productsPerSite)
+      : Math.ceil(filteredProducts.length / productsPerSite);
 
   if (filteredProducts.length > 0) {
     res.status(200).json({
