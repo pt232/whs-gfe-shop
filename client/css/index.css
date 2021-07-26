@@ -216,7 +216,7 @@
   }
 
   .products__pages {
-    grid-row: 7;
+    grid-row: initial;
   }
 
   .product-item--big {

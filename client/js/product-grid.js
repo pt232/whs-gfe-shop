@@ -1,10 +1,15 @@
 const productGrid = document.querySelector("#productGrid");
 const sortOptions = document.querySelectorAll(".products__option");
+const sortOffers = document.querySelector("#sortOffers");
 const sortPriceLth = document.querySelector("#sortPriceLth");
 const sortPriceHtl = document.querySelector("#sortPriceHtl");
-const sortOffers = document.querySelector("#sortOffers");
 let currentPage = 1;
 let currentFilter = "offers";
+
+sortOffers.addEventListener("click", () => {
+  displayCurrentFilter(0, "offers");
+  createProductGrid(currentPage, currentFilter);
+});
 
 sortPriceLth.addEventListener("click", () => {
   displayCurrentFilter(1, "plth");
@@ -13,11 +18,6 @@ sortPriceLth.addEventListener("click", () => {
 
 sortPriceHtl.addEventListener("click", () => {
   displayCurrentFilter(2, "phtl");
-  createProductGrid(currentPage, currentFilter);
-});
-
-sortOffers.addEventListener("click", () => {
-  displayCurrentFilter(3, "offers");
   createProductGrid(currentPage, currentFilter);
 });
 

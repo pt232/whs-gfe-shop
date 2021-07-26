@@ -35,6 +35,46 @@
   gap: 3rem;
 }
 
+.look-book__grid--no {
+  grid-template-rows: 10rem;
+}
+
+.look-book__grid--one {
+  grid-template-rows: 45rem 0 0;
+}
+
+.look-book__grid--three {
+  grid-template-rows: 45rem 45rem 0;
+}
+
+.look-book__pages {
+  display: flex;
+  align-items: center;
+  grid-row: 4;
+}
+
+.look-book__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.5rem;
+  background-color: var(--color-gray);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 350ms;
+}
+
+.look-book__page:hover {
+  background-color: var(--color-cyan);
+}
+
+.look-book__page--selected {
+  background-color: var(--color-cyan);
+}
+
 .look-item {
   position: relative;
   cursor: pointer;
@@ -50,20 +90,6 @@
 
 .look-item:hover > .look-item__thumbnails {
   display: flex;
-}
-
-.look-item__thumbnails {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  display: none;
-  flex-direction: column;
-}
-
-.look-item__thumbnail {
-  width: max-content;
-  max-width: 8rem;
-  margin-bottom: 1.5rem;
 }
 
 .look-item__details {
@@ -106,17 +132,27 @@
 }
 
 .look-ad--first {
-  grid-column: span 2;
+  grid-row: 1;
+  grid-column: 3 / span 2;
   background-image: url("../img/lookbook-1.jpg");
   background-size: 95rem;
   background-position: left top;
 }
 
+.look-book__grid--one .look-ad--first {
+  grid-column: 2 / span 2;
+}
+
 .look-ad--second {
-  grid-column: span 3;
+  grid-row: 3;
+  grid-column: 1 / span 3;
   background-image: url("../img/lookbook-2.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.look-book__grid--three .look-ad--second {
+  grid-row: 2;
 }
 
 .look-ad__title {
@@ -174,7 +210,11 @@
 
   .look-book__grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, minmax(45rem, auto));
+    grid-template-rows: auto;
+  }
+
+  .look-book__pages {
+    grid-row: initial;
   }
 
   .look-ad {
@@ -187,7 +227,12 @@
   }
 
   .look-ad--first {
+    grid-row: 2 !important;
     background-size: cover;
+  }
+
+  .look-ad--second {
+    grid-row: initial !important;
   }
 
   .look-ad__title {

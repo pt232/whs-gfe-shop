@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/look-book.css" />
+    <script src="./js/lookbook-grid.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -66,64 +67,17 @@
     <main class="look-book">
       <div class="container">
         <ul class="look-book__bar">
-          <li class="look-book__option look-book__option--seclected">Latest</li>
+          <li
+            id="sortLatest"
+            class="look-book__option look-book__option--seclected"
+          >
+            Latest
+          </li>
+          <li id="sortPriceLth" class="look-book__option">Price Low To High</li>
+          <li id="sortPriceHtl" class="look-book__option">Price High to Low</li>
           <li class="look-book__option">Best Sellers</li>
-          <li class="look-book__option">Price Low To High</li>
-          <li class="look-book__option">Price High to Low</li>
         </ul>
-        <div class="look-book__grid">
-          <div class="look-item">
-            <img src="./img/product-1.png" alt="Lookbook" />
-            <div class="look-item__thumbnails">
-              <img
-                src="./img/thumb-front.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-              <img
-                src="./img/thumb-back.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-            </div>
-            <div class="look-item__details">
-              <h6 class="look-item__title">Janines Summer Dress</h6>
-              <p class="text">
-                My casual summer dress helps me feeling happy. I wear it
-                whenever possible.
-              </p>
-              <p class="look-item__cost text">
-                Total cost including shorts, shoes and accessories is
-                <span>&euro;190</span>
-              </p>
-            </div>
-          </div>
-          <div class="look-item">
-            <img src="./img/product-2.png" alt="Lookbook" />
-            <div class="look-item__thumbnails">
-              <img
-                src="./img/thumb-front.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-              <img
-                src="./img/thumb-back.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-            </div>
-            <div class="look-item__details">
-              <h6 class="look-item__title">Janines Summer Dress</h6>
-              <p class="text">
-                My casual summer dress helps me feeling happy. I wear it
-                whenever possible.
-              </p>
-              <p class="look-item__cost text">
-                Total cost including shorts, shoes and accessories is
-                <span>&euro;190</span>
-              </p>
-            </div>
-          </div>
+        <div id="lookbookGrid" class="look-book__grid">
           <div class="look-ad look-ad--first">
             <h2 class="look-ad__title"><span>Jane's</span> Lookbook</h2>
             <h4 class="subtitle">Get the look for under &euro;200!</h4>
@@ -138,110 +92,6 @@
             <a href="./create-look-book.html" class="look-ad__btn btn"
               >Own Book</a
             >
-          </div>
-          <div class="look-item">
-            <img src="./img/product-3.png" alt="Lookbook" />
-            <div class="look-item__thumbnails">
-              <img
-                src="./img/thumb-front.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-              <img
-                src="./img/thumb-back.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-            </div>
-            <div class="look-item__details">
-              <h6 class="look-item__title">Janines Summer Dress</h6>
-              <p class="text">
-                My casual summer dress helps me feeling happy. I wear it
-                whenever possible.
-              </p>
-              <p class="look-item__cost text">
-                Total cost including shorts, shoes and accessories is
-                <span>&euro;190</span>
-              </p>
-            </div>
-          </div>
-          <div class="look-item">
-            <img src="./img/product-4.png" alt="Lookbook" />
-            <div class="look-item__thumbnails">
-              <img
-                src="./img/thumb-front.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-              <img
-                src="./img/thumb-back.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-            </div>
-            <div class="look-item__details">
-              <h6 class="look-item__title">Janines Summer Dress</h6>
-              <p class="text">
-                My casual summer dress helps me feeling happy. I wear it
-                whenever possible.
-              </p>
-              <p class="look-item__cost text">
-                Total cost including shorts, shoes and accessories is
-                <span>&euro;190</span>
-              </p>
-            </div>
-          </div>
-          <div class="look-item">
-            <img src="./img/product-5.png" alt="Lookbook" />
-            <div class="look-item__thumbnails">
-              <img
-                src="./img/thumb-front.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-              <img
-                src="./img/thumb-back.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-            </div>
-            <div class="look-item__details">
-              <h6 class="look-item__title">Janines Summer Dress</h6>
-              <p class="text">
-                My casual summer dress helps me feeling happy. I wear it
-                whenever possible.
-              </p>
-              <p class="look-item__cost text">
-                Total cost including shorts, shoes and accessories is
-                <span>&euro;190</span>
-              </p>
-            </div>
-          </div>
-          <div class="look-item">
-            <img src="./img/product-6.png" alt="Lookbook" />
-            <div class="look-item__thumbnails">
-              <img
-                src="./img/thumb-front.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-              <img
-                src="./img/thumb-back.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-            </div>
-            <div class="look-item__details">
-              <h6 class="look-item__title">Janines Summer Dress</h6>
-              <p class="text">
-                My casual summer dress helps me feeling happy. I wear it
-                whenever possible.
-              </p>
-              <p class="look-item__cost text">
-                Total cost including shorts, shoes and accessories is
-                <span>&euro;190</span>
-              </p>
-            </div>
           </div>
           <div class="look-ad look-ad--second">
             <h2 class="look-ad__title"><span>Win</span> a new look!</h2>
@@ -264,32 +114,6 @@
             <div class="look-ad__cta">
               <p>Win</p>
               <p>a new Look</p>
-            </div>
-          </div>
-          <div class="look-item">
-            <img src="./img/product-7.png" alt="Lookbook" />
-            <div class="look-item__thumbnails">
-              <img
-                src="./img/thumb-front.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-              <img
-                src="./img/thumb-back.png"
-                alt="Image Thumbnail"
-                class="look-item__thumbnail"
-              />
-            </div>
-            <div class="look-item__details">
-              <h6 class="look-item__title">Janines Summer Dress</h6>
-              <p class="text">
-                My casual summer dress helps me feeling happy. I wear it
-                whenever possible.
-              </p>
-              <p class="look-item__cost text">
-                Total cost including shorts, shoes and accessories is
-                <span>&euro;190</span>
-              </p>
             </div>
           </div>
         </div>
