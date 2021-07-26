@@ -47,6 +47,7 @@ const stores = [
 
 const buttons = document.querySelectorAll("[data-button]");
 const locationInformation = document.querySelector("#locationInformation");
+const map = document.querySelector("#map");
 let currentStoreId = 1;
 
 buttons.forEach((btn) => {
@@ -67,6 +68,7 @@ function updateLocationInformation(currentStoreId, storeId, stores) {
 
   const location = stores.find((store) => store.id == storeId);
 
+  map.innerHTML = "";
   initMap(location.longitude, location.latitude);
 
   const locationHtml = `
