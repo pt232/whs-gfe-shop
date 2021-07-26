@@ -33,6 +33,7 @@
 }
 
 .create-look__btn {
+  display: block;
   width: 25rem;
 }
 
@@ -40,6 +41,15 @@
   display: flex;
   align-items: center;
   margin: 2.5rem 0;
+}
+
+.create-look__box {
+  display: flex;
+  align-items: center;
+}
+
+.create-look__box > *:first-child {
+  margin-right: 2.5rem;
 }
 
 .create-look__checkbox {

@@ -35,7 +35,8 @@ ul {
 }
 
 button,
-input {
+input,
+input[type="file"]::-webkit-file-upload-button {
   background: none;
   color: inherit;
   font-family: inherit;

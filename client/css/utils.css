@@ -67,6 +67,12 @@
   background-color: var(--color-error-light);
 }
 
+.success {
+  padding: 0.8rem 1.2rem;
+  color: var(--color-success);
+  background-color: var(--color-success-light);
+}
+
 /* HEADER */
 
 .header {

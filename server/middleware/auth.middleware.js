@@ -8,10 +8,15 @@ const authUser = (req, res, next) => {
   if (token === process.env.ACCESS_TOKEN) {
     next();
   } else {
-    res.status(404).json({
-      success: false,
-      data: "You are not authorized.",
-    });
+    const { token } = req.query;
+    if (token === process.env.ACCESS_TOKEN) {
+      next();
+    } else {
+      res.status(404).json({
+        success: false,
+        data: "You are not authorized.",
+      });
+    }
   }
 };
 

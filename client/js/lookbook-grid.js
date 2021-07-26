@@ -114,7 +114,7 @@ async function fetchLookbooks(page, sortBy) {
     const res = await fetch(
       `http://localhost:5000/api/v1/lookbook?page=${page}&sort=${sortBy}`
     );
-    return res.json();
+    return await res.json();
   } catch (error) {
     throw new Error();
   }

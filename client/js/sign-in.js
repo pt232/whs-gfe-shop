@@ -4,6 +4,10 @@ const loginPassword = document.querySelector("#loginPassword");
 
 loginForm.addEventListener("submit", handleSubmit);
 
+if (localStorage.getItem("token")) {
+  window.location.href = "create-look-book.html";
+}
+
 async function handleSubmit(e) {
   e.preventDefault();
 

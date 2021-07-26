@@ -9,6 +9,8 @@
   --color-gray-lighter: #f7f7f7;
   --color-error: #d8000c;
   --color-error-light: #ffbaba;
+  --color-success: #4f8a10;
+  --color-success-light: #dff2bf;
 
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Roboto", sans-serif;

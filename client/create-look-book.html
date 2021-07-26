@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/create-look-book.css" />
+    <script src="./js/create-lookbook.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -63,18 +64,20 @@
     <!-- CONTENT -->
     <main class="create-look">
       <div class="container container--small">
-        <div class="create-look__wrapper">
+        <div id="lbWrapper" class="create-look__wrapper">
           <h3 class="create-look__title title">Create your own Look Book</h3>
-          <form action="" class="create-look__from">
+          <form id="createLookForm" class="create-look__from">
             <input
               type="text"
               placeholder="Headline..."
+              id="lbHeadline"
               class="create-look__input input"
               required
             />
             <input
               type="number"
               placeholder="Your dresses price..."
+              id="lbPrice"
               class="create-look__input input"
               min="0"
               required
@@ -82,22 +85,23 @@
             <input
               type="text"
               placeholder="Your dresses description..."
+              id="lbDescription"
               class="create-look__input input"
               required
             />
-            <input
-              type="button"
-              value="Upload Picture"
-              class="create-look__btn btn"
-            />
+            <div class="create-look__box">
+              <label class="create-look__btn btn">
+                Upload a Picture
+                <input
+                  type="file"
+                  accept=".jpg,.jpeg,.png"
+                  style="display: none"
+                />
+              </label>
+              <span id="uploadedFile"></span>
+            </div>
             <div class="create-look__container">
-              <input
-                type="checkbox"
-                placeholder="Your dresses description..."
-                id="cb"
-                class="create-look__checkbox"
-                required
-              />
+              <input type="checkbox" id="cb" class="create-look__checkbox" />
               <label for="cb" class="create-look__label">
                 Agree to publish your details on the website.
               </label>
