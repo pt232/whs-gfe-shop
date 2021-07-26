@@ -423,7 +423,7 @@ const getProductById = (req, res) => {
 
   res.status(200).json({
     success: true,
-    data: product,
+    data: product[0],
   });
 };
 

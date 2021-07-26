@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/product-view.css" />
+    <script src="./js/product.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -58,9 +59,10 @@
         <h1 class="hero__title">
           <span class="hero__title--bold">Product</span> View
         </h1>
-        <h2 class="hero__subtitle hero__subtitle--cyan">
-          Ave Classic Sweatshirt
-        </h2>
+        <h2
+          id="productHeroTitle"
+          class="hero__subtitle hero__subtitle--cyan"
+        ></h2>
       </div>
     </section>
 
@@ -68,19 +70,7 @@
     <main class="overview">
       <div class="container container--small">
         <section class="overview__basics">
-          <ul class="overview__slider">
-            <li class="slider__item">
-              <img src="./img/slider-1.png" alt="Product" />
-            </li>
-            <li class="slider__item">
-              <img src="./img/slider-1.png" alt="Product" />
-            </li>
-            <li class="slider__item">
-              <img src="./img/slider-1.png" alt="Product" />
-            </li>
-            <li class="slider__item">
-              <img src="./img/slider-1.png" alt="Product" />
-            </li>
+          <ul id="imageSlider" class="overview__slider">
             <div class="slider__arrow slider__arrow--first">
               <i class="fas fa-chevron-left"></i>
             </div>
@@ -89,16 +79,12 @@
             </div>
           </ul>
           <div class="basic-information">
-            <h3 class="title">Ave classic sweatshirt</h3>
+            <h3 id="productTitle" class="title"></h3>
             <div class="basic-information__bar">
-              <div class="basic-information__reviews">
-                <i class="fas fa-star star star--filled"></i>
-                <i class="fas fa-star star star--filled"></i>
-                <i class="fas fa-star star star--filled"></i>
-                <i class="fas fa-star star star--filled"></i>
-                <i class="fas fa-star star"></i>
-              </div>
-              <p class="basic-information__text">3 Review(s)</p>
+              <div id="productStars" class="basic-information__reviews"></div>
+              <p id="productReviews" class="basic-information__text">
+                3 Review(s)
+              </p>
               <a href="#" class="basic-information__link">Add a Review</a>
               <p class="basic-information__text">Share:</p>
               <ul class="basic-information__socials">
@@ -164,29 +150,19 @@
                 </li>
               </ul>
             </div>
-            <p class="basic-information__price">89.99</p>
+            <p id="productPrice" class="basic-information__price"></p>
             <div class="basic-information__availability">
               <p>
-                <span style="text-transform: uppercase">Availability:</span> In
-                stock
+                <span style="text-transform: uppercase">Availability:</span>
+                <span id="productAvailability"></span>
               </p>
               <p>
                 <span style="text-transform: uppercase">Product Code:</span>
-                #499577
+                <span id="productCode"></span>
               </p>
             </div>
-            <p class="text">
-              Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh
-              suspendisse est congue metus nunc, id viverra elit loreti rhoncus
-              quis consecteur es. Donec pulvinar tempor lorem a pretium justo
-              interdum.
-            </p>
-            <ul class="basic-information__details">
-              <li>Elasticated cuffs</li>
-              <li>Casual Fit</li>
-              <li>100% Cotton</li>
-              <li>Free shipping with 4 days delivery</li>
-            </ul>
+            <p id="productDescriptionMiddle" class="text"></p>
+            <ul id="productProperties" class="basic-information__details"></ul>
           </div>
         </section>
         <section class="overview__additions">
@@ -198,38 +174,8 @@
               <li class="tabs__item">Delivery & Returns</li>
               <li class="tabs__item">Reviews</li>
             </ul>
-            <div class="tabs__content">
-              <h5 class="subtitle">
-                Nunc egestas posuere enim, eu maximus erat posuere eget
-              </h5>
-              <p class="text">
-                Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis.
-                Nulla sapien magna, interdum quis pretium nec, pharetra at
-                felis. Curabitur dictum sapien est, eget ultricies turpis porta
-                vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus
-                risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet
-                pretium elit. Aliquam congue, ligula id vehicula vestibulum,
-                orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed
-                quis aliquet risus, ut cursus lectus. In eget lorem tellus.
-              </p>
-              <p class="text">
-                Quisque eleifend varius nisi nec sagittis. Nulla ullamcorper
-                imperdiet justo, ut venenatis purus lobortis ut. Nunc sagittis
-                urna et hendrerit sodales. Nunc molestie risus nec fringilla
-                lacinia. Nulla facilisi. Etiam neque velit, tristique eget
-                sollicitudin eget, placerat at metus. Proin dictum lobortis
-                velit, id suscipit orci faucibus ut. Aliquam erat volutpat.
-                Vivamus feugiat justo in diam placerat, id dignissim elit
-                auctor. Vestibulum scelerisque sem et lobortis ultricies. Morbi
-                suscipit nulla urna. Suspendisse potenti. Nullam varius quam sed
-                nisl dignissim, vel faucibus ipsum blandit. Vivamus at suscipit
-                augue. Nam finibus gravida lorem eu viverra. Praesent rhoncus
-                imperdiet ultricies. Nullam pretium cursus augue auctor
-                vulputate. Quisque a convallis diam commodo eget diam id,
-                eleifend dictum libero. Etiam varius, nisi vel dignissim
-                sodales, enim dui posuere mauris, in aliquet lorem eros eget
-                neque.
-              </p>
+            <div id="tabContent" class="tabs__content">
+              <h5 id="tabDescriptionTitle" class="subtitle"></h5>
             </div>
           </div>
         </section>
