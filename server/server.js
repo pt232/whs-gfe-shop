@@ -3,15 +3,24 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const express = require("express");
+const cors = require("cors");
+const productRouter = require("./routes/product.routes");
 
 const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.use(express.json());
+app.use(
+  cors({
+    origin: process.env.ORIGIN_HOST,
+  })
+);
 
-app.get("/example", (req, res) => {
+app.use("/api/v1/product", productRouter);
+
+app.get("/", (req, res) => {
   res.status(200).json({
-    message: "Everything is fine 🥳",
+    message: "Welcome to this Avenue Fashion API 🥳",
   });
 });
 
