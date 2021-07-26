@@ -1,3 +1,5 @@
+import { initImageSlider } from "./slider.js";
+
 const productHeroTitle = document.querySelector("#productHeroTitle");
 const imageSlider = document.querySelector("#imageSlider");
 const productTitle = document.querySelector("#productTitle");
@@ -55,6 +57,7 @@ function fillImageSlider(images) {
   });
 
   imageSlider.insertAdjacentHTML("afterbegin", sliderItemHtml);
+  initImageSlider();
 }
 
 function fillProductInformation(data) {

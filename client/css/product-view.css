@@ -25,7 +25,7 @@
   height: 100%;
 }
 
-.slider__item:not(:first-child) {
+.slider__item--hide {
   display: none;
 }
 
