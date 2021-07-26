@@ -6,7 +6,7 @@ const createLogin = (req, res) => {
   const { email, password } = req.body;
 
   if (email !== process.env.EMAIL || password !== process.env.PASSWORD) {
-    return res.status(404).json({
+    return res.status(400).json({
       success: false,
       error: "Email or password is incorrect.",
     });

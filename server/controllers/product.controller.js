@@ -399,7 +399,7 @@ const getProducts = (req, res) => {
       pageCount: pageCount,
     });
   } else {
-    res.status(204).json({
+    res.status(400).json({
       success: false,
       data: filteredProducts,
       error: "No products were found.",

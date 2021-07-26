@@ -7,6 +7,8 @@
   --color-gray-dark: #333333;
   --color-gray-light: #8e8c8c;
   --color-gray-lighter: #f7f7f7;
+  --color-error: #d8000c;
+  --color-error-light: #ffbaba;
 
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Roboto", sans-serif;
