@@ -399,7 +399,7 @@ const getProducts = (req, res) => {
       pageCount: pageCount,
     });
   } else {
-    res.status(400).json({
+    res.status(204).json({
       success: false,
       data: filteredProducts,
       error: "No products were found.",
@@ -412,6 +412,14 @@ const getProductById = (req, res) => {
   const { productId } = req.params;
 
   const product = products.filter((p) => p.id == productId);
+
+  if (product.length === 0) {
+    return res.status(400).json({
+      success: false,
+      data: product,
+      error: "No product found.",
+    });
+  }
 
   res.status(200).json({
     success: true,

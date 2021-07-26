@@ -14,7 +14,7 @@ const createLogin = (req, res) => {
 
   res.status(200).json({
     success: true,
-    data: true,
+    token: process.env.ACCESS_TOKEN,
   });
 };
 
