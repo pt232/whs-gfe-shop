@@ -1,4 +1,3 @@
-const userLookbook = {};
 const lookbooks = [
   {
     id: 1,
@@ -8,6 +7,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -18,6 +18,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -28,6 +29,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -38,6 +40,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -48,6 +51,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -58,6 +62,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -68,6 +73,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -78,6 +84,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -88,6 +95,7 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
   {
@@ -98,9 +106,11 @@ const lookbooks = [
       "My casual summer dress helps me feeling happy. I wear it whenever possible.",
     image:
       "https://raw.githubusercontent.com/pt232/whs-gfe-shop/master/server/images/products/product-1.1.jpg",
+    publish: true,
     createdAt: new Date(),
   },
 ];
+let userLookbook = {};
 
 const getLookbooks = (req, res) => {
   const { page, sort } = req.query;
@@ -168,7 +178,23 @@ const getUserLookbook = (req, res) => {
 };
 
 const createUserLookbook = (req, res) => {
-  const { title, price, description, publish } = req.body;
+  const { title, price, description, image, publish } = req.body;
+  const id = lookbooks[lookbooks.length - 1].id + 1;
+
+  userLookbook = {
+    id: id,
+    name: title,
+    price: price,
+    description: description,
+    image: image,
+    publish: publish,
+    createdAt: new Date(),
+  };
+
+  res.status(200).json({
+    success: true,
+    data: userLookbook,
+  });
 };
 
 module.exports = {
