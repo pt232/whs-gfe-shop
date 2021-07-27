@@ -113,6 +113,7 @@ function createPageSystem(pageCount) {
     pageSelector.addEventListener("click", () => {
       currentPage = i + 1;
       createProductGrid(currentPage, currentFilter);
+      window.location.href = "#products";
     });
   }
 

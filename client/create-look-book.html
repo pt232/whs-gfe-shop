@@ -66,7 +66,11 @@
       <div class="container container--small">
         <div id="lbWrapper" class="create-look__wrapper">
           <h3 class="create-look__title title">Create your own Look Book</h3>
-          <form id="createLookForm" class="create-look__from">
+          <form
+            id="createLookForm"
+            class="create-look__from"
+            autocomplete="off"
+          >
             <input
               type="text"
               placeholder="Headline..."
@@ -96,6 +100,7 @@
                   type="file"
                   accept=".jpg,.jpeg,.png"
                   style="display: none"
+                  id="lbImageFile"
                 />
               </label>
               <span id="uploadedFile"></span>

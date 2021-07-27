@@ -103,6 +103,7 @@ function createPageSystem(pageCount) {
     pageSelector.addEventListener("click", () => {
       currentPage = i + 1;
       createLookbookGrid(currentPage, currentFilter);
+      window.location.href = "#lookbooks";
     });
   }
 

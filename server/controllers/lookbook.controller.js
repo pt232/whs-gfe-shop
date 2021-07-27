@@ -175,7 +175,7 @@ const getUserLookbook = (req, res) => {
 };
 
 const createUserLookbook = (req, res) => {
-  const { title, price, description, image, publish } = req.body;
+  const { title, price, description, image, imageName, publish } = req.body;
   const id = lookbooks[lookbooks.length - 1].id + 1;
 
   userLookbook = {
@@ -184,6 +184,7 @@ const createUserLookbook = (req, res) => {
     price: price,
     description: description,
     image: image,
+    imageName: imageName,
     publish: publish,
     createdAt: new Date(),
   };

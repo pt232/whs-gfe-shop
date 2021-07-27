@@ -3,10 +3,16 @@ const createLookForm = document.querySelector("#createLookForm");
 const lbHeadline = document.querySelector("#lbHeadline");
 const lbPrice = document.querySelector("#lbPrice");
 const lbDescription = document.querySelector("#lbDescription");
+const lbImageFile = document.querySelector("#lbImageFile");
+const uploadedFile = document.querySelector("#uploadedFile");
 const cb = document.querySelector("#cb");
 let lookbookExists = false;
+let file = null;
+let fileToBase64 = "";
 
 createLookForm.addEventListener("submit", handleSubmit);
+
+lbImageFile.addEventListener("change", passFileData);
 
 if (!localStorage.getItem("token")) {
   window.location.href = "sign-in.html";
@@ -36,8 +42,16 @@ async function passData() {
     lbHeadline.value = res.data.name;
     lbPrice.value = res.data.price;
     lbDescription.value = res.data.description;
+    fileToBase64 = res.data.image;
+    uploadedFile.innerText = res.data.imageName;
     cb.checked = res.data.publish;
   }
+}
+
+async function passFileData() {
+  file = lbImageFile.files[0];
+  uploadedFile.innerText = file.name;
+  fileToBase64 = await toBase64(file);
 }
 
 async function fetchCreateLookbook() {
@@ -52,13 +66,18 @@ async function fetchCreateLookbook() {
         title: lbHeadline.value,
         price: lbPrice.value,
         description: lbDescription.value,
-        image: "",
+        image: fileToBase64,
+        imageName: uploadedFile.innerText,
         publish: cb.checked,
       }),
     });
     return await res.json();
   } catch (error) {
-    addMessage("error", "Something went wrong.", false);
+    addMessage(
+      "error",
+      "Something went wrong. Maybe the selected image is too big.",
+      false
+    );
   }
 }
 
@@ -91,4 +110,13 @@ function addMessage(type, message, temp) {
       lbWrapper.removeChild(messageBox);
     }, 3000);
   }
+}
+
+function toBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = (error) => reject(error);
+  });
 }
