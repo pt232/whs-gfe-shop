@@ -23,6 +23,13 @@ passData();
 async function handleSubmit(e) {
   e.preventDefault();
 
+  clearErrorMessages();
+
+  if (fileToBase64 === "") {
+    addMessage("error", "Please add an image.", false);
+    return;
+  }
+
   const res = await fetchCreateLookbook();
 
   if (res.success) {
@@ -73,11 +80,7 @@ async function fetchCreateLookbook() {
     });
     return await res.json();
   } catch (error) {
-    addMessage(
-      "error",
-      "Something went wrong. Maybe the selected image is too big.",
-      false
-    );
+    addMessage("error", "Something went wrong.", false);
   }
 }
 
@@ -109,6 +112,13 @@ function addMessage(type, message, temp) {
     setTimeout(() => {
       lbWrapper.removeChild(messageBox);
     }, 3000);
+  }
+}
+
+function clearErrorMessages() {
+  const errorMessages = document.querySelectorAll(".error");
+  for (let i = 0; i < errorMessages.length; i++) {
+    errorMessages[i].parentNode.removeChild(errorMessages[i]);
   }
 }
 
