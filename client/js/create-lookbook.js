@@ -71,7 +71,7 @@ async function fetchCreateLookbook() {
       body: JSON.stringify({
         token: localStorage.getItem("token"),
         title: lbHeadline.value,
-        price: lbPrice.value,
+        price: parseFloat(lbPrice.value),
         description: lbDescription.value,
         image: fileToBase64,
         imageName: uploadedFile.innerText,

@@ -65,9 +65,9 @@ function getProductItem(product, index) {
         </div>
         ${
           !product.price.offer
-            ? '<p class="product-item__price">' +
+            ? '<p class="product-item__price"><span class="product-item__current">' +
               product.price.current.toFixed(2) +
-              "</p>"
+              "</span></p>"
             : '<p class="product-item__price"><span class="product-item__last">' +
               product.price.last.toFixed(2) +
               "</span><span class='product-item__current'>" +
