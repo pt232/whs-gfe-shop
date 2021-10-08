@@ -1,6 +1,6 @@
 # Fashion Online Shop 👕
 
-Hier entsteht noch etwas...
+Entwicklung eines Online Shops für eine fiktive Modemarke.
 
 ## Loslegen
 
@@ -24,4 +24,13 @@ Befolge diese einfachen Schritte, um eine lokale Kopie des Projektes zum Laufen 
 3. Server im Server-Ordner starten
    ```sh
    npm run dev
+   ```
+4. Anlegen von Umgebungsvariablen
+   ```sh
+   NODE_ENV=
+   PORT=
+   ORIGIN_HOST=
+   EMAIL=
+   PASSWORD=
+   ACCESS_TOKEN=
    ```
