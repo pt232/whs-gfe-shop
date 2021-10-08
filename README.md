@@ -1,4 +1,4 @@
-# Fashion Online Shop 🛍
+# Fashion Online Shop 🏬
 
 Entwicklung eines Online Shops für eine fiktive Modemarke.
 
